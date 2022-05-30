@@ -4,21 +4,21 @@ PhyGraFT: a network-based method for phylogenetic trait analysis
 ## Reference
 
 ## Requirements
-PhyloGraft is written with R and uses RSpectra library for eigenvalues and vectors calculation.
+PhyGraft is written with R and uses RSpectra library for eigenvalues and vectors calculation.
 
 ## Functions
-PhyloGraft includes following functions
+PhyGraft includes following functions
 
 - sym_normalized_graph_laplacian(A)
 	- Return symmetrically normalized graph Laplacian matrix from the adjacency matrix of A.
 - graph_laplacian_regularizer(x, U, eigenvalues)
-	- Return GLR value of phlygenetic signal x using eigenvector matrix U and eigenvalues.
+	- Return aGLR value of phlygenetic signal x using eigenvector matrix U and eigenvalues.
 - graph_fourier_transform(L,X,m)
 	- Return the top-m eigenvectors and eigenvalues of L, graph Fourier coefficients hF and tF (haf_f and tilde_f) for trait data matrix X.
 - barplot_gfdomain(hF,tF,i)
 	- Plot barplot for GF coefficients for the i-th eigenvector.
-- plot_glr(X,U,shuffle_num)
-	- Plot GLR values of trait data matrix X. shuffle_num is the number of negative control data generated from shuffling X.
+- plot_aGLR(X,U,shuffle_num)
+	- Plot aGLR values of trait data matrix X. shuffle_num is the number of negative control data generated from shuffling X.
 
 ## Dataset
 We have four datasets, and each dataset have the ajdacency matrix of k-NNG (A.txt) and binary trait data matrix (X.txt).
